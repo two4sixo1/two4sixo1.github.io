@@ -65,7 +65,7 @@ AUTHOR WEBSITE: https://themefisher.com
     <div class="row">
       <div class="col-12">
         <nav class="navbar navbar-expand-lg navbar-light p-0">
-          <a class="navbar-brand font-weight-bold mr-0" href="https://two4sixo1.github.io">
+          <a class="navbar-brand font-weight-bold mr-0" href="https://two4sixo1.github.io/">
             
 
 
@@ -226,10 +226,7 @@ AUTHOR WEBSITE: https://themefisher.com
         
         
         
-        
-        
-        
-        <li class="list-inline-item">/ &nbsp; <a href="https://two4sixo1.github.ioelements">Elements</a></li>
+        <li class="list-inline-item breadcrumb-dynamic-list-item">/ &nbsp; <a href="https://two4sixo1.github.io/elements" style="display:none">Elements</a></li>
         
         
         
@@ -241,6 +238,22 @@ AUTHOR WEBSITE: https://themefisher.com
     </div>
   </div>
 </section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var elements = document.getElementsByClassName("breadcrumb-dynamic-list-item");
+    Array.prototype.forEach.call(elements, function(element) {
+      var a = element.firstElementChild;
+      var decodedUrl = decodeURIComponent(a);
+      var text = decodedUrl.split("/")[decodedUrl.split("/").length - 1];
+
+      var upperFirstCharacter = text.slice(0,1).toUpperCase() + text.slice(1);
+
+      a.text = upperFirstCharacter;
+      a.style.display = null;
+    });
+  });
+</script>
   
   
 
