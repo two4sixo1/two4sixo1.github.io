@@ -9,15 +9,18 @@
     <lastBuildDate>Sun, 24 Jan 2021 18:19:25 +0600</lastBuildDate><atom:link href="https://two4sixo1.github.io/tags/ui/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>測試頁</title>
-      <link>https://two4sixo1.github.io/blog/post-9/</link>
+      <link>https://two4sixo1.github.io/portfolio/</link>
       <pubDate>Sun, 24 Jan 2021 18:19:25 +0600</pubDate>
       
-      <guid>https://two4sixo1.github.io/blog/post-9/</guid>
-      <description>閱讀心得 | Gallery view (notion.site)
- 閱讀心得 | Gallery view (notion.site)
- 迷霧之子 在post/post-09資料夾 jpg
-迷霧之子 在post 資料夾 jpg
-readmoo zoom50% jpg</description>
+      <guid>https://two4sixo1.github.io/portfolio/</guid>
+      <description>![](網址)這語法的圖只能放網路圖，本機圖片不顯示
+外連圖片
+外連圖片50%，框裡面寫字(無效果)
+圖片+連結測試 OK！
+&amp;lt;a href=&amp;quot;https://marketreading.com/zh-TW/ui-ux-design-trends.html&amp;quot;&amp;gt;&amp;lt;img src=&amp;quot;https://marketreading.com/uploads/article/6829/MPF0eyrdstFqb81V.jpg&amp;quot; style=&amp;quot;zoom:50%;&amp;quot; /&amp;gt;&amp;lt;/a&amp;gt;
+
+加上caption=&amp;ldquo;文字&amp;rdquo; 無反應 
+             sdfsdfsdfsdf sdfsdfsddf     兩個{{中間不要有空格 { {&amp;lt; image src=&amp;ldquo;本機圖片位置&amp;rdquo; caption=&amp;ldquo;測試圖片&amp;rdquo; alt=&amp;ldquo;alter-text&amp;rdquo; command=&amp;ldquo;fill&amp;rdquo; option=&amp;ldquo;q95&amp;rdquo; class=&amp;ldquo;img-fluid&amp;rdquo; title=&amp;ldquo;image title&amp;rdquo; &amp;gt;}}</description>
     </item>
     
   </channel>

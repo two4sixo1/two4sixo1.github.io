@@ -2,10 +2,10 @@
 <html lang="zh-tw">
 <head>
   <meta charset="utf-8">
-  <title>Blog</title>
+  <title>測試頁</title>
 
   <meta name="author" content="Ann">
-  <meta name="description" content=" meta description ">
+  <meta name="description" content=" 心得評論 ">
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
@@ -248,6 +248,52 @@ if (!doNotTrack) {
 </div>
 
   
+  <section class="section-sm pb-2 page-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-8 mx-auto text-center">
+
+        
+        <h3 class="mb-3 text-dark font-weight-bold">測試頁</h3>
+        
+
+
+        <ul class="list-inline breadcrumb-menu">
+        
+        
+        <li class="list-inline-item"><a href="/">Home</a></li>
+        
+        
+        
+        <li class="list-inline-item breadcrumb-dynamic-list-item">/ &nbsp; <a href="https://two4sixo1.github.io/portfolio" style="display:none">Portfolio</a></li>
+        
+        
+        
+        
+        
+        
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var elements = document.getElementsByClassName("breadcrumb-dynamic-list-item");
+    Array.prototype.forEach.call(elements, function(element) {
+      var a = element.firstElementChild;
+      var decodedUrl = decodeURIComponent(a);
+      var text = decodedUrl.split("/")[decodedUrl.split("/").length - 1];
+
+      var upperFirstCharacter = text.slice(0,1).toUpperCase() + text.slice(1);
+
+      a.text = upperFirstCharacter;
+      a.style.display = null;
+    });
+  });
+</script>
+  
   
 
 
@@ -255,15 +301,42 @@ if (!doNotTrack) {
 
 <section class="section-sm">
   <div class="container">
-    <div class="row no-gutters justify-content-center">
+    <div class="row justify-content-center">
       <div class="col-lg-10">
-        <div class="row">
-          
-          <div class="col-lg-6">
-            <article class="card post-card">
-  
-  <a href="https://two4sixo1.github.io/blog/post-10/">
-    
+        <div class="content">
+          <p><code>![](網址)這語法的圖只能放網路圖，本機圖片不顯示</code></p>
+<p>外連圖片</p>
+<p><img src="https://marketreading.com/uploads/article/6829/MPF0eyrdstFqb81V.jpg" alt="測試 這裡的文字無反應"></p>
+<p>外連圖片50%，框裡面寫字(無效果)</p>
+<img src="https://marketreading.com/uploads/article/6829/MPF0eyrdstFqb81V.jpg" alt="寫字" style="zoom:50%;" />
+<p>圖片+連結測試 OK！</p>
+<p><code>&lt;a href=&quot;https://marketreading.com/zh-TW/ui-ux-design-trends.html&quot;&gt;&lt;img src=&quot;https://marketreading.com/uploads/article/6829/MPF0eyrdstFqb81V.jpg&quot; style=&quot;zoom:50%;&quot; /&gt;&lt;/a&gt;</code></p>
+<p><a href="https://marketreading.com/zh-TW/ui-ux-design-trends.html"><img src="https://marketreading.com/uploads/article/6829/MPF0eyrdstFqb81V.jpg" alt="寫字" style="zoom:50%;" /></a></p>
+<p>加上caption=&ldquo;文字&rdquo; 無反應
+<a href="https://two4sixo1.github.io/blog/post-4/"><img src="https://two4sixo1.github.io/images/post/05_hu9df52e9b6213b2ec47133dfa0e607f46_19199_1110x0_resize_q100_h2_box.webp" caption="測試"/></a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="D:\Hugo\Bookworm\exampleSite\assets\images\post\post-10.jpg" style="zoom:50%;" /></th>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><a href="https://two4sixo1.github.io/blog/post-4/"><img src="https://two4sixo1.github.io/images/post/05_hu9df52e9b6213b2ec47133dfa0e607f46_19199_1110x0_resize_q100_h2_box.webp" /></td>
+<td style="text-align:center"><a href="https://marketreading.com/zh-TW/ui-ux-design-trends.html"><img src="https://marketreading.com/uploads/article/6829/MPF0eyrdstFqb81V.jpg" alt="寫字" style="zoom:100%;" /></td>
+</tr>
+<tr>
+<td style="text-align:center">sdfsdfsdfsdf</td>
+<td style="text-align:center">sdfsdfsddf</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>兩個{{中間不要有空格
+<br>
+{ {&lt; image src=&ldquo;本機圖片位置&rdquo; caption=&ldquo;測試圖片&rdquo; alt=&ldquo;alter-text&rdquo; command=&ldquo;fill&rdquo; option=&ldquo;q95&rdquo; class=&ldquo;img-fluid&rdquo; title=&ldquo;image title&rdquo; &gt;}}</p>
+</blockquote>
 
 
 
@@ -301,27 +374,8 @@ if (!doNotTrack) {
 
 
 
-<picture>
-  <source srcset="/images/post/post-10_hu30c9e381a8037ed2a2675a23dca05f1c_752338_545x0_resize_q100_h2_box.webp" media="(max-width: 575px)">
-  <source srcset="/images/post/post-10_hu30c9e381a8037ed2a2675a23dca05f1c_752338_600x0_resize_q100_h2_box.webp" media="(max-width: 767px)">
-  <source srcset="/images/post/post-10_hu30c9e381a8037ed2a2675a23dca05f1c_752338_700x0_resize_q100_h2_box.webp" media="(max-width: 991px)">
-  <source srcset="/images/post/post-10_hu30c9e381a8037ed2a2675a23dca05f1c_752338_1110x0_resize_q100_h2_box.webp">
-  <img loading="lazy" decoding="async" class="w-100 h-auto rounded" src="/images/post/post-10_hu30c9e381a8037ed2a2675a23dca05f1c_752338_1110x0_resize_q100_box.jpg" alt="台北第一高峰 七星山" width="1934" height="1001">
-</picture>
- 
- 
- 
 
 
-  </a>
-  
-  <div class="card-body">
-    <ul class="card-meta list-inline mb-2">
-      <li class="list-inline-item mb-2">
-        
-        <div class="card-meta-author">
-          
-          
 
 
 
@@ -345,6 +399,10 @@ if (!doNotTrack) {
 
 
 
+<figure class="" role="group" aria-describedby="caption-測試圖片">
+  <img title="image title" loading="lazy" decoding="async" class="img-fluid mb-2" width="1934" height="1001" src="/images/post/post-10_hu30c9e381a8037ed2a2675a23dca05f1c_752338_1934x1001_fill_q95_h2_box_smart1.webp" alt="alter-text" onerror="this.onerror='null';this.src='\/images\/post\/post-10_hu30c9e381a8037ed2a2675a23dca05f1c_752338_1934x1001_fill_q95_box_smart1.jpg'">
+  <figcaption class="text-center" id="caption-測試圖片">測試圖片</figcaption>
+</figure>
 
 
 
@@ -352,48 +410,13 @@ if (!doNotTrack) {
 
 
 
+<p>圖不夠大似乎會歪掉
+<a href="https://two4sixo1.github.io/blog/post-4/">
 
 
-<img loading="lazy" decoding="async" src="/images/author/author_hubce0bc118f0760235277af1864b5fdd6_48654_26x26_resize_q100_h2_box.webp" alt="Ann" class="w-auto" width="26" height="26" onerror="this.onerror='null';this.src='\/images\/author\/author_hubce0bc118f0760235277af1864b5fdd6_48654_26x26_resize_q100_box.jpg'">
- 
- 
- 
 
 
-          
-          <span>Ann</span>
-        </div>
-        
-      </li>
-      <li class="list-inline-item mb-2">
-        <span>2022-03-17</span>
-      </li>
-      <li class="list-inline-item mb-2">
-        <ul class="card-meta-tag list-inline">
-          
-          <li class="list-inline-item"><a href="https://two4sixo1.github.io//tags/%E5%81%A5%E8%A1%8C">健行</a></li>
-          
-          <li class="list-inline-item"><a href="https://two4sixo1.github.io//tags/hiking">Hiking</a></li>
-          
-        </ul>
-      </li>
-    </ul>
-    <h4 class="mb-3">
-      <a class="post-title" href="https://two4sixo1.github.io/blog/post-10/">台北第一高峰 七星山</a>
-    </h4>
-    <p>苗圃登山口出發 從苗圃登山口到七星山，大概花了一個小時，前半段都是平穩的階梯還可以，大約1km後不久會看到一個涼亭，後面才是考驗的開始。
-大塊高低不平的石頭讓難度一下子提升很多，我爬的哭爹喊娘，石頭有點滑，走的時候需要很小心，很怕一個重心不 …</p>
 
-    
-  </div>
-</article>
-          </div>
-          
-          <div class="col-lg-6">
-            <article class="card post-card">
-  
-  <a href="https://two4sixo1.github.io/blog/post-7/">
-    
 
 
 
@@ -431,27 +454,8 @@ if (!doNotTrack) {
 
 
 
-<picture>
-  <source srcset="/images/post/02_hu2ae383fe1319764169dba9e9a81bc264_12510_545x0_resize_q100_h2_box.webp" media="(max-width: 575px)">
-  <source srcset="/images/post/02_hu2ae383fe1319764169dba9e9a81bc264_12510_600x0_resize_q100_h2_box.webp" media="(max-width: 767px)">
-  <source srcset="/images/post/02_hu2ae383fe1319764169dba9e9a81bc264_12510_700x0_resize_q100_h2_box.webp" media="(max-width: 991px)">
-  <source srcset="/images/post/02_hu2ae383fe1319764169dba9e9a81bc264_12510_1110x0_resize_q100_h2_box.webp">
-  <img loading="lazy" decoding="async" class="w-100 h-auto rounded" src="/images/post/02_hu2ae383fe1319764169dba9e9a81bc264_12510_1110x0_resize_q100_box.jpg" alt="What you need to know about Photography" width="970" height="500">
-</picture>
- 
- 
- 
 
 
-  </a>
-  
-  <div class="card-body">
-    <ul class="card-meta list-inline mb-2">
-      <li class="list-inline-item mb-2">
-        
-        <div class="card-meta-author">
-          
-          
 
 
 
@@ -459,1095 +463,42 @@ if (!doNotTrack) {
 
 
 
+<figure class="" role="group" aria-describedby="caption-測試圖片2 gif可以，a標籤可以">
+  <img title="image title" loading="lazy" decoding="async" class="img-fluid mb-2" width="593" height="833" src="/images/post/post-09/Kobo%20App-Prototype-Main%20Page.gif" alt="alter-text" onerror="this.onerror='null';this.src=''">
+  <figcaption class="text-center" id="caption-測試圖片2 gif可以，a標籤可以">測試圖片2 gif可以，a標籤可以</figcaption>
+</figure>
 
 
 
 
 
 
+</a></p>
+<br>
+<p><a href="https://tw.yahoo.com">YAHOO</a></p>
+<h5 id="測試標題-測試-45">測試標題 [測試] 4.5★</h5>
+<p><strong>加粗標圖</strong></p>
+<p>老早就想看這部電影了，但一直都沒有真正去找來看，前幾天在電視上轉到電影台，剛好在播心靈勇者，看完後想起還有一部經典的老片，也是講述二次大戰日本軍官和白人俘虜的故事。</p>
+<p>雖然講的是戰俘營的事情，但劇情有不少感情成份(BL)
+除此之外，還有一些東西方思想的碰撞，而主角勞倫斯試著緩和兩方關係。</p>
+<p>老電影的鏡頭運用真的比較細膩，沒有過多的切換畫面，但不會無聊，並且可以專注表現角色情緒。
+音樂不用說，經典，尤其是主題曲，不論是演奏版還是演唱版都超棒，當初一聽到Forbidden Colours後就另我念念不忘，也因此認識這部電影。</p>
+<p>雖然我原本看這部電影是想看BL劇情啦，可是更吸引我的是主角勞倫斯跟原中士(北野武)的友情，我兩次哭都是因為他們啊！</p>
+<br>
+<br>
+<br>
+<p><img src="http://3.bp.blogspot.com/-3FI2oCFYWuY/VgajR1BDFBI/AAAAAAAAEmA/_fF9-1Li6Is/s320/mAO9vH8tosh6si8Fq1SlabcXJjc.jpg" alt=""></p>
+<img src="http://3.bp.blogspot.com/-3FI2oCFYWuY/VgajR1BDFBI/AAAAAAAAEmA/_fF9-1Li6Is/s320/mAO9vH8tosh6si8Fq1SlabcXJjc.jpg" style="zoom:50%;" />
+<p><img src="http://1.bp.blogspot.com/-b7x8fF7gUqM/Vgaa0z7tqqI/AAAAAAAAEkM/SSv_cDKP_90/s640/%25E8%259E%25A2%25E5%25B9%2595%25E6%2588%25AA%25E5%259C%2596%2B2015-09-26%2B20.11.27.png" alt=""></p>
+<img src="http://1.bp.blogspot.com/-b7x8fF7gUqM/Vgaa0z7tqqI/AAAAAAAAEkM/SSv_cDKP_90/s640/%25E8%259E%25A2%25E5%25B9%2595%25E6%2588%25AA%25E5%259C%2596%2B2015-09-26%2B20.11.27.png" style="zoom:150%;" />
+<hr>
+<h5 id="youtube-video">Youtube video</h5>
 
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/LGs_vGt0MY8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<img loading="lazy" decoding="async" src="/images/author/author_hubce0bc118f0760235277af1864b5fdd6_48654_26x26_resize_q100_h2_box.webp" alt="Ann" class="w-auto" width="26" height="26" onerror="this.onerror='null';this.src='\/images\/author\/author_hubce0bc118f0760235277af1864b5fdd6_48654_26x26_resize_q100_box.jpg'">
- 
- 
- 
-
-
-          
-          <span>Ann</span>
-        </div>
-        
-      </li>
-      <li class="list-inline-item mb-2">
-        <span>2021-02-04</span>
-      </li>
-      <li class="list-inline-item mb-2">
-        <ul class="card-meta-tag list-inline">
-          
-          <li class="list-inline-item"><a href="https://two4sixo1.github.io//tags/photography">Photography</a></li>
-          
-        </ul>
-      </li>
-    </ul>
-    <h4 class="mb-3">
-      <a class="post-title" href="https://two4sixo1.github.io/blog/post-7/">What you need to know about Photography</a>
-    </h4>
-    <p>Photography is an invaluable medium that allows us to capture the incandescent beauty of the outside world, something …</p>
-
-    
-  </div>
-</article>
-          </div>
-          
-          <div class="col-lg-6">
-            <article class="card post-card">
-  
-  <a href="https://two4sixo1.github.io/blog/post-6/">
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<picture>
-  <source srcset="/images/post/03_hu2cddd1b819dc7bc54d031318ff6e8606_12397_545x0_resize_q100_h2_box.webp" media="(max-width: 575px)">
-  <source srcset="/images/post/03_hu2cddd1b819dc7bc54d031318ff6e8606_12397_600x0_resize_q100_h2_box.webp" media="(max-width: 767px)">
-  <source srcset="/images/post/03_hu2cddd1b819dc7bc54d031318ff6e8606_12397_700x0_resize_q100_h2_box.webp" media="(max-width: 991px)">
-  <source srcset="/images/post/03_hu2cddd1b819dc7bc54d031318ff6e8606_12397_1110x0_resize_q100_h2_box.webp">
-  <img loading="lazy" decoding="async" class="w-100 h-auto rounded" src="/images/post/03_hu2cddd1b819dc7bc54d031318ff6e8606_12397_1110x0_resize_q100_box.jpg" alt="Become a morning person with the help of this a alarm clock" width="970" height="500">
-</picture>
- 
- 
- 
-
-
-  </a>
-  
-  <div class="card-body">
-    <ul class="card-meta list-inline mb-2">
-      <li class="list-inline-item mb-2">
-        
-        <div class="card-meta-author">
-          
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<img loading="lazy" decoding="async" src="/images/author/author_hubce0bc118f0760235277af1864b5fdd6_48654_26x26_resize_q100_h2_box.webp" alt="Ann" class="w-auto" width="26" height="26" onerror="this.onerror='null';this.src='\/images\/author\/author_hubce0bc118f0760235277af1864b5fdd6_48654_26x26_resize_q100_box.jpg'">
- 
- 
- 
-
-
-          
-          <span>Ann</span>
-        </div>
-        
-      </li>
-      <li class="list-inline-item mb-2">
-        <span>2021-02-03</span>
-      </li>
-      <li class="list-inline-item mb-2">
-        <ul class="card-meta-tag list-inline">
-          
-          <li class="list-inline-item"><a href="https://two4sixo1.github.io//tags/alarm">Alarm</a></li>
-          
-          <li class="list-inline-item"><a href="https://two4sixo1.github.io//tags/clock">Clock</a></li>
-          
-        </ul>
-      </li>
-    </ul>
-    <h4 class="mb-3">
-      <a class="post-title" href="https://two4sixo1.github.io/blog/post-6/">Become a morning person with the help of this a alarm clock</a>
-    </h4>
-    <p>Almost every day for the past nine or so months has felt like March 13, and that can sometimes make it difficult to want …</p>
-
-    
-  </div>
-</article>
-          </div>
-          
-          <div class="col-lg-6">
-            <article class="card post-card">
-  
-  <a href="https://two4sixo1.github.io/blog/post-5/">
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<picture>
-  <source srcset="/images/post/04_hud616c6f72b0fb8e8d011f559525ff80b_11712_545x0_resize_q100_h2_box.webp" media="(max-width: 575px)">
-  <source srcset="/images/post/04_hud616c6f72b0fb8e8d011f559525ff80b_11712_600x0_resize_q100_h2_box.webp" media="(max-width: 767px)">
-  <source srcset="/images/post/04_hud616c6f72b0fb8e8d011f559525ff80b_11712_700x0_resize_q100_h2_box.webp" media="(max-width: 991px)">
-  <source srcset="/images/post/04_hud616c6f72b0fb8e8d011f559525ff80b_11712_1110x0_resize_q100_h2_box.webp">
-  <img loading="lazy" decoding="async" class="w-100 h-auto rounded" src="/images/post/04_hud616c6f72b0fb8e8d011f559525ff80b_11712_1110x0_resize_q100_box.jpg" alt="Why a balloon is a flexible bag that can be inflated with a gas" width="970" height="501">
-</picture>
- 
- 
- 
-
-
-  </a>
-  
-  <div class="card-body">
-    <ul class="card-meta list-inline mb-2">
-      <li class="list-inline-item mb-2">
-        
-        <div class="card-meta-author">
-          
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<img loading="lazy" decoding="async" src="/images/author/author_hubce0bc118f0760235277af1864b5fdd6_48654_26x26_resize_q100_h2_box.webp" alt="Ann" class="w-auto" width="26" height="26" onerror="this.onerror='null';this.src='\/images\/author\/author_hubce0bc118f0760235277af1864b5fdd6_48654_26x26_resize_q100_box.jpg'">
- 
- 
- 
-
-
-          
-          <span>Ann</span>
-        </div>
-        
-      </li>
-      <li class="list-inline-item mb-2">
-        <span>2021-02-02</span>
-      </li>
-      <li class="list-inline-item mb-2">
-        <ul class="card-meta-tag list-inline">
-          
-          <li class="list-inline-item"><a href="https://two4sixo1.github.io//tags/balloon">Balloon</a></li>
-          
-          <li class="list-inline-item"><a href="https://two4sixo1.github.io//tags/gas">Gas</a></li>
-          
-        </ul>
-      </li>
-    </ul>
-    <h4 class="mb-3">
-      <a class="post-title" href="https://two4sixo1.github.io/blog/post-5/">Why a balloon is a flexible bag that can be inflated with a gas</a>
-    </h4>
-    <p>A balloon is a flexible bag that can be inflated with a gas, such as helium, hydrogen, nitrous oxide, oxygen, and air. …</p>
-
-    
-  </div>
-</article>
-          </div>
-          
-          <div class="col-lg-6">
-            <article class="card post-card">
-  
-  <a href="https://two4sixo1.github.io/blog/post-4/">
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<picture>
-  <source srcset="/images/post/05_hu9df52e9b6213b2ec47133dfa0e607f46_19199_545x0_resize_q100_h2_box.webp" media="(max-width: 575px)">
-  <source srcset="/images/post/05_hu9df52e9b6213b2ec47133dfa0e607f46_19199_600x0_resize_q100_h2_box.webp" media="(max-width: 767px)">
-  <source srcset="/images/post/05_hu9df52e9b6213b2ec47133dfa0e607f46_19199_700x0_resize_q100_h2_box.webp" media="(max-width: 991px)">
-  <source srcset="/images/post/05_hu9df52e9b6213b2ec47133dfa0e607f46_19199_1110x0_resize_q100_h2_box.webp">
-  <img loading="lazy" decoding="async" class="w-100 h-auto rounded" src="/images/post/05_hu9df52e9b6213b2ec47133dfa0e607f46_19199_1110x0_resize_q100_box.jpg" alt="Banana is the best meal packages in the UK spark outrage online" width="970" height="500">
-</picture>
- 
- 
- 
-
-
-  </a>
-  
-  <div class="card-body">
-    <ul class="card-meta list-inline mb-2">
-      <li class="list-inline-item mb-2">
-        
-        <div class="card-meta-author">
-          
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<img loading="lazy" decoding="async" src="/images/author/author_hubce0bc118f0760235277af1864b5fdd6_48654_26x26_resize_q100_h2_box.webp" alt="Ann" class="w-auto" width="26" height="26" onerror="this.onerror='null';this.src='\/images\/author\/author_hubce0bc118f0760235277af1864b5fdd6_48654_26x26_resize_q100_box.jpg'">
- 
- 
- 
-
-
-          
-          <span>Ann</span>
-        </div>
-        
-      </li>
-      <li class="list-inline-item mb-2">
-        <span>2021-01-25</span>
-      </li>
-      <li class="list-inline-item mb-2">
-        <ul class="card-meta-tag list-inline">
-          
-          <li class="list-inline-item"><a href="https://two4sixo1.github.io//tags/food">Food</a></li>
-          
-          <li class="list-inline-item"><a href="https://two4sixo1.github.io//tags/gold">Gold</a></li>
-          
-        </ul>
-      </li>
-    </ul>
-    <h4 class="mb-3">
-      <a class="post-title" href="https://two4sixo1.github.io/blog/post-4/">Banana is the best meal packages in the UK spark outrage online</a>
-    </h4>
-    <p>A banana is an elongated, edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering …</p>
-
-    
-  </div>
-</article>
-          </div>
-          
-          <div class="col-lg-6">
-            <article class="card post-card">
-  
-  <a href="https://two4sixo1.github.io/blog/post-3/">
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<picture>
-  <source srcset="/images/post/06_hu8f605ca9b8a5338fde448dca44923fe4_14047_545x0_resize_q100_h2_box.webp" media="(max-width: 575px)">
-  <source srcset="/images/post/06_hu8f605ca9b8a5338fde448dca44923fe4_14047_600x0_resize_q100_h2_box.webp" media="(max-width: 767px)">
-  <source srcset="/images/post/06_hu8f605ca9b8a5338fde448dca44923fe4_14047_700x0_resize_q100_h2_box.webp" media="(max-width: 991px)">
-  <source srcset="/images/post/06_hu8f605ca9b8a5338fde448dca44923fe4_14047_1110x0_resize_q100_h2_box.webp">
-  <img loading="lazy" decoding="async" class="w-100 h-auto rounded" src="/images/post/06_hu8f605ca9b8a5338fde448dca44923fe4_14047_1110x0_resize_q100_box.jpg" alt="DIY Paper Diamond Tutorial with HUNGRY HEART" width="970" height="500">
-</picture>
- 
- 
- 
-
-
-  </a>
-  
-  <div class="card-body">
-    <ul class="card-meta list-inline mb-2">
-      <li class="list-inline-item mb-2">
-        
-        <div class="card-meta-author">
-          
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<img loading="lazy" decoding="async" src="/images/author/author_hubce0bc118f0760235277af1864b5fdd6_48654_26x26_resize_q100_h2_box.webp" alt="Ann" class="w-auto" width="26" height="26" onerror="this.onerror='null';this.src='\/images\/author\/author_hubce0bc118f0760235277af1864b5fdd6_48654_26x26_resize_q100_box.jpg'">
- 
- 
- 
-
-
-          
-          <span>Ann</span>
-        </div>
-        
-      </li>
-      <li class="list-inline-item mb-2">
-        <span>2021-01-25</span>
-      </li>
-      <li class="list-inline-item mb-2">
-        <ul class="card-meta-tag list-inline">
-          
-          <li class="list-inline-item"><a href="https://two4sixo1.github.io//tags/diy">Diy</a></li>
-          
-          <li class="list-inline-item"><a href="https://two4sixo1.github.io//tags/toy">Toy</a></li>
-          
-        </ul>
-      </li>
-    </ul>
-    <h4 class="mb-3">
-      <a class="post-title" href="https://two4sixo1.github.io/blog/post-3/">DIY Paper Diamond Tutorial with HUNGRY HEART</a>
-    </h4>
-    <p>A paper diamond is such a pretty way to bring a flair of stylish luxury to your home.. Ut bibendum lacus vestibulum …</p>
-
-    
-  </div>
-</article>
-          </div>
-          
-          <div class="col-lg-6">
-            <article class="card post-card">
-  
-  <a href="https://two4sixo1.github.io/blog/post-2/">
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<picture>
-  <source srcset="/images/post/03_hu2cddd1b819dc7bc54d031318ff6e8606_12397_545x0_resize_q100_h2_box.webp" media="(max-width: 575px)">
-  <source srcset="/images/post/03_hu2cddd1b819dc7bc54d031318ff6e8606_12397_600x0_resize_q100_h2_box.webp" media="(max-width: 767px)">
-  <source srcset="/images/post/03_hu2cddd1b819dc7bc54d031318ff6e8606_12397_700x0_resize_q100_h2_box.webp" media="(max-width: 991px)">
-  <source srcset="/images/post/03_hu2cddd1b819dc7bc54d031318ff6e8606_12397_1110x0_resize_q100_h2_box.webp">
-  <img loading="lazy" decoding="async" class="w-100 h-auto rounded" src="/images/post/03_hu2cddd1b819dc7bc54d031318ff6e8606_12397_1110x0_resize_q100_box.jpg" alt="Become a morning person with the help of this a alarm clock" width="970" height="500">
-</picture>
- 
- 
- 
-
-
-  </a>
-  
-  <div class="card-body">
-    <ul class="card-meta list-inline mb-2">
-      <li class="list-inline-item mb-2">
-        
-        <div class="card-meta-author">
-          
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<img loading="lazy" decoding="async" src="/images/author/author_hubce0bc118f0760235277af1864b5fdd6_48654_26x26_resize_q100_h2_box.webp" alt="Ann" class="w-auto" width="26" height="26" onerror="this.onerror='null';this.src='\/images\/author\/author_hubce0bc118f0760235277af1864b5fdd6_48654_26x26_resize_q100_box.jpg'">
- 
- 
- 
-
-
-          
-          <span>Ann</span>
-        </div>
-        
-      </li>
-      <li class="list-inline-item mb-2">
-        <span>2021-01-25</span>
-      </li>
-      <li class="list-inline-item mb-2">
-        <ul class="card-meta-tag list-inline">
-          
-          <li class="list-inline-item"><a href="https://two4sixo1.github.io//tags/alarm">Alarm</a></li>
-          
-          <li class="list-inline-item"><a href="https://two4sixo1.github.io//tags/clock">Clock</a></li>
-          
-        </ul>
-      </li>
-    </ul>
-    <h4 class="mb-3">
-      <a class="post-title" href="https://two4sixo1.github.io/blog/post-2/">Become a morning person with the help of this a alarm clock</a>
-    </h4>
-    <p>Nam ut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum …</p>
-
-    
-  </div>
-</article>
-          </div>
-          
-          <div class="col-lg-6">
-            <article class="card post-card">
-  
-  <a href="https://two4sixo1.github.io/blog/post-1/">
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<picture>
-  <source srcset="/images/post/07_hu87cfa772d680845bf02827471d433677_16404_545x0_resize_q100_h2_box.webp" media="(max-width: 575px)">
-  <source srcset="/images/post/07_hu87cfa772d680845bf02827471d433677_16404_600x0_resize_q100_h2_box.webp" media="(max-width: 767px)">
-  <source srcset="/images/post/07_hu87cfa772d680845bf02827471d433677_16404_700x0_resize_q100_h2_box.webp" media="(max-width: 991px)">
-  <source srcset="/images/post/07_hu87cfa772d680845bf02827471d433677_16404_1110x0_resize_q100_h2_box.webp">
-  <img loading="lazy" decoding="async" class="w-100 h-auto rounded" src="/images/post/07_hu87cfa772d680845bf02827471d433677_16404_1110x0_resize_q100_box.jpg" alt="What you need to know about Photography" width="970" height="500">
-</picture>
- 
- 
- 
-
-
-  </a>
-  
-  <div class="card-body">
-    <ul class="card-meta list-inline mb-2">
-      <li class="list-inline-item mb-2">
-        
-        <div class="card-meta-author">
-          
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<img loading="lazy" decoding="async" src="/images/author/author_hubce0bc118f0760235277af1864b5fdd6_48654_26x26_resize_q100_h2_box.webp" alt="Ann" class="w-auto" width="26" height="26" onerror="this.onerror='null';this.src='\/images\/author\/author_hubce0bc118f0760235277af1864b5fdd6_48654_26x26_resize_q100_box.jpg'">
- 
- 
- 
-
-
-          
-          <span>Ann</span>
-        </div>
-        
-      </li>
-      <li class="list-inline-item mb-2">
-        <span>2021-01-24</span>
-      </li>
-      <li class="list-inline-item mb-2">
-        <ul class="card-meta-tag list-inline">
-          
-          <li class="list-inline-item"><a href="https://two4sixo1.github.io//tags/photography">Photography</a></li>
-          
-        </ul>
-      </li>
-    </ul>
-    <h4 class="mb-3">
-      <a class="post-title" href="https://two4sixo1.github.io/blog/post-1/">What you need to know about Photography</a>
-    </h4>
-    <p>Nam ut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum …</p>
-
-    
-  </div>
-</article>
-          </div>
-          
-          <div class="col-lg-6">
-            <article class="card post-card">
-  
-  <a href="https://two4sixo1.github.io/blog/post-99/">
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<picture>
-  <source srcset="/images/post/07_hu87cfa772d680845bf02827471d433677_16404_545x0_resize_q100_h2_box.webp" media="(max-width: 575px)">
-  <source srcset="/images/post/07_hu87cfa772d680845bf02827471d433677_16404_600x0_resize_q100_h2_box.webp" media="(max-width: 767px)">
-  <source srcset="/images/post/07_hu87cfa772d680845bf02827471d433677_16404_700x0_resize_q100_h2_box.webp" media="(max-width: 991px)">
-  <source srcset="/images/post/07_hu87cfa772d680845bf02827471d433677_16404_1110x0_resize_q100_h2_box.webp">
-  <img loading="lazy" decoding="async" class="w-100 h-auto rounded" src="/images/post/07_hu87cfa772d680845bf02827471d433677_16404_1110x0_resize_q100_box.jpg" alt="What you need to know about Photography" width="970" height="500">
-</picture>
- 
- 
- 
-
-
-  </a>
-  
-  <div class="card-body">
-    <ul class="card-meta list-inline mb-2">
-      <li class="list-inline-item mb-2">
-        
-        <div class="card-meta-author">
-          
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<img loading="lazy" decoding="async" src="/images/author/author_hubce0bc118f0760235277af1864b5fdd6_48654_26x26_resize_q100_h2_box.webp" alt="Ann" class="w-auto" width="26" height="26" onerror="this.onerror='null';this.src='\/images\/author\/author_hubce0bc118f0760235277af1864b5fdd6_48654_26x26_resize_q100_box.jpg'">
- 
- 
- 
-
-
-          
-          <span>Ann</span>
-        </div>
-        
-      </li>
-      <li class="list-inline-item mb-2">
-        <span>2021-01-24</span>
-      </li>
-      <li class="list-inline-item mb-2">
-        <ul class="card-meta-tag list-inline">
-          
-          <li class="list-inline-item"><a href="https://two4sixo1.github.io//tags/photography">Photography</a></li>
-          
-        </ul>
-      </li>
-    </ul>
-    <h4 class="mb-3">
-      <a class="post-title" href="https://two4sixo1.github.io/blog/post-99/">What you need to know about Photography</a>
-    </h4>
-    <p>Nam ut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum …</p>
-
-    
-  </div>
-</article>
-          </div>
-          
-          <div class="col-lg-6">
-            <article class="card post-card">
-  
-  <a href="https://two4sixo1.github.io/blog/post-9/">
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<picture>
-  <source srcset="/images/post/04_hud616c6f72b0fb8e8d011f559525ff80b_11712_545x0_resize_q100_h2_box.webp" media="(max-width: 575px)">
-  <source srcset="/images/post/04_hud616c6f72b0fb8e8d011f559525ff80b_11712_600x0_resize_q100_h2_box.webp" media="(max-width: 767px)">
-  <source srcset="/images/post/04_hud616c6f72b0fb8e8d011f559525ff80b_11712_700x0_resize_q100_h2_box.webp" media="(max-width: 991px)">
-  <source srcset="/images/post/04_hud616c6f72b0fb8e8d011f559525ff80b_11712_1110x0_resize_q100_h2_box.webp">
-  <img loading="lazy" decoding="async" class="w-100 h-auto rounded" src="/images/post/04_hud616c6f72b0fb8e8d011f559525ff80b_11712_1110x0_resize_q100_box.jpg" alt="測試頁" width="970" height="501">
-</picture>
- 
- 
- 
-
-
-  </a>
-  
-  <div class="card-body">
-    <ul class="card-meta list-inline mb-2">
-      <li class="list-inline-item mb-2">
-        
-        <div class="card-meta-author">
-          
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<img loading="lazy" decoding="async" src="/images/author/author_hubce0bc118f0760235277af1864b5fdd6_48654_26x26_resize_q100_h2_box.webp" alt="Ann" class="w-auto" width="26" height="26" onerror="this.onerror='null';this.src='\/images\/author\/author_hubce0bc118f0760235277af1864b5fdd6_48654_26x26_resize_q100_box.jpg'">
- 
- 
- 
-
-
-          
-          <span>Ann</span>
-        </div>
-        
-      </li>
-      <li class="list-inline-item mb-2">
-        <span>2021-01-24</span>
-      </li>
-      <li class="list-inline-item mb-2">
-        <ul class="card-meta-tag list-inline">
-          
-          <li class="list-inline-item"><a href="https://two4sixo1.github.io//tags/%E5%90%8C%E4%BA%BA">同人</a></li>
-          
-          <li class="list-inline-item"><a href="https://two4sixo1.github.io//tags/%E7%B6%9C%E8%8B%B1%E7%BE%8E">綜英美</a></li>
-          
-        </ul>
-      </li>
-    </ul>
-    <h4 class="mb-3">
-      <a class="post-title" href="https://two4sixo1.github.io/blog/post-9/">測試頁</a>
-    </h4>
-    <p>
-YAHOO
-測試標題 [測試] 4.5★ 加粗標圖
-老早就想看這部電影了，但一直都沒有真正去找來看，前幾天在電視上轉到電影台，剛好在播心靈勇者，看完後想起還有一部經典的老片，也是講述二次大戰日本軍官和白人俘虜的故事。
-雖然講的是戰俘營的事 …</p>
-
-    
-  </div>
-</article>
-          </div>
-          
         </div>
       </div>
     </div>
