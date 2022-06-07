@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Redesign on 婕Anns Profile</title>
+    <link>https://two4sixo1.github.io/tags/redesign/</link>
+    <description>Recent content in Redesign on 婕Anns Profile</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Wed, 20 Apr 2022 18:19:25 +0600</lastBuildDate><atom:link href="https://two4sixo1.github.io/tags/redesign/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kobo App UI Redesign</title>
+      <link>https://two4sixo1.github.io/blog/post-9/</link>
+      <pubDate>Wed, 20 Apr 2022 18:19:25 +0600</pubDate>
+      
+      <guid>https://two4sixo1.github.io/blog/post-9/</guid>
+      <description>專案背景 | Background 樂天Kobo電子書成立於加拿大，隸屬於日本樂天，是全球第二大電子書平台，2016年正式在台灣提供繁體中文電子書商店及App 服務。
+樂天Kobo APP主打方便閱讀、購買電子書等功能，但不順暢的使用流程以及不直覺的操作系統，導致使用者在閱讀或購買書籍的體驗不佳。
+設計目標 | Design Goal 優化部分介面及icon，將原本過於老舊的設計適度調整，簡化部分流程，讓使用者更容易上手，提高購買意願。
+ --</description>
+    </item>
+    
+  </channel>
+</rss>
